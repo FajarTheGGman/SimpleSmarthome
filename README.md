@@ -1,13 +1,13 @@
 # SimpleSmarthome
  #Simple Smarthome By Nodemcu and nodejs
 
-![alt-text](https://raw.githubusercontent.com/FajarTheGGman/SimpleSmarthome/master/.img/b.png)
+![](https://raw.githubusercontent.com/FajarTheGGman/SimpleSmarthome/master/.img/b.png)
 
 ![](https://img.shields.io/badge/Framework-Nodejs-lime) ![](https://img.shields.io/badge/Microncontroller-Nodemcu-Yellow)
 
 # Screenshots
-![alt-text](https://raw.githubusercontent.com/FajarTheGGman/SimpleSmarthome/master/.img/banner.png)
-![alt-text](https://raw.githubusercontent.com/FajarTheGGman/SimpleSmarthome/master/.img/sc.png)
+![](https://raw.githubusercontent.com/FajarTheGGman/SimpleSmarthome/master/.img/banner.png)
+![](https://raw.githubusercontent.com/FajarTheGGman/SimpleSmarthome/master/.img/sc.png)
 
 # Wiring
 
@@ -18,7 +18,7 @@ Tools Used
 - Powersupply 3.3v
 </pre>
 
-![alt-text](https://raw.githubusercontent.com/FajarTheGGman/SimpleSmarthome/master/.img/diagram.png)
+![](https://raw.githubusercontent.com/FajarTheGGman/SimpleSmarthome/master/.img/diagram.png)
 
 
 # How can i connect to server
@@ -27,11 +27,11 @@ Tools Used
 
 2. open tools menu and select serial monitor menu 
 
-![alt-text](https://raw.githubusercontent.com/FajarTheGGman/SimpleSmarthome/master/.img/serial.png)
+![](https://raw.githubusercontent.com/FajarTheGGman/SimpleSmarthome/master/.img/serial.png)
 
 3. Wait till ip address printed
 
-![alt-text](https://raw.githubusercontent.com/FajarTheGGman/SimpleSmarthome/master/.img/ip.png)
+![](https://raw.githubusercontent.com/FajarTheGGman/SimpleSmarthome/master/.img/ip.png)
 
 
 # Run The Server
@@ -42,4 +42,4 @@ Tools Used
 3.and open your browser and type http://localhost:5000
 4.input your router ip from serial monitor
 </pre>
-![alt-text](https://raw.githubusercontent.com/FajarTheGGman/SimpleSmarthome/master/.img/ip.png)
+![](https://raw.githubusercontent.com/FajarTheGGman/SimpleSmarthome/master/.img/ip.png)
