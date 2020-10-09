@@ -1,0 +1,161 @@
+<html>
+  <head>
+    <title>Simple SmartHome</title>
+    <link rel="stylesheet" href="http://localhost:5000/bootstrap" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="http://localhost:5000/jquery"></script>
+  </head>
+
+<style>
+body{
+background: black;
+}
+
+h1{
+font-family: monospace;
+}
+
+p{
+font-family: sans-serif
+}
+
+</style>
+
+
+  <body>
+    <div class="container bg-dark pb-5 rounded-bottom">
+      <br>
+      <h1 class="alert alert-light text-center text-dark">Simple-Smarthome</h1>
+      <p class="alert alert-light text-center text-dark pd-1">By FajarTheGGman</p>
+
+      <table class='table table-light'>
+        <thead>
+          <tr>
+            <th scope='col'>ID</th>
+            <th scope='col'>Relay</th>
+            <th scope='col'>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Relay 1</td>
+            <td><button id="btn1off" onclick='relayonemati()' class='btn btn-danger'>Turn OFF</button> <button id="btn1on" onclick="relayone()" class="btn btn-success">Turn ON</button> </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Relay 2</td>
+            <td><button id='btn2off' onclick="relaytwomati()" class='btn btn-danger'>Turn OFF</button> <button id='btn2on' onclick="relaytwo()" class='btn btn-success'>Turn ON</button> </td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Relay 3</td>
+            <td><button id='btn3off' onclick='relaythreemati()' class='btn btn-danger'>Turn OFF</button> <button id='btn3on' onclick="relaythree()" class='btn btn-success'>Turn ON</button> </td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>Relay 4</td>
+            <td><button id='btn4off' onclick="relayfourmati()" class='btn btn-danger'>Turn OFF</button> <button id="btn4on" onclick='relayfour()' class='btn btn-success'>Turn ON</button> </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+
+  <script>
+   var x = prompt("Please Input Your Routers IP")
+
+  function relayone(){
+   $.ajax({
+     type: "GET",
+     url:"http://" + x + "/relayone",
+     success: function(data){
+      alert(data)
+     }
+   })
+  }
+
+   function relayonemati(){
+     $.ajax({
+       type: 'GET',
+       url:"http://" + x + "/relayonemati",
+       success: function(data){
+          console.log(data)
+       }
+     })
+   }
+
+  function relaytwo(){
+   $.ajax({
+     type: "GET",
+     url:"http://" + x + "/relaytwo",
+     success: function(data){
+      alert(data)
+     }
+   })
+  }
+
+   function relaytwomati(){
+     $.ajax({
+       type: 'GET',
+       url:"http://" + x + "/relaytwomati",
+       success: function(data){
+          console.log(data)
+       }
+     })
+   }
+
+
+
+  function relaythree(){
+   $.ajax({
+     type: "GET",
+     url:"http://" + x + "/relaythree",
+     success: function(data){
+      alert(data)
+     }
+   })
+  }
+
+   function relaythreemati(){
+     $.ajax({
+       type: 'GET',
+       url:"http://" + x + "/relaythreemati",
+       success: function(data){
+          console.log(data)
+       }
+     })
+   }
+
+
+
+  function relayfour(){
+   $.ajax({
+     type: "GET",
+     url:"http://" + x + "/relayfour",
+     success: function(data){
+      alert(data)
+     }
+   })
+  }
+
+   function relayfourmati(){
+     $.ajax({
+       type: 'GET',
+       url:"http://" + x + "/relayfourmati",
+       success: function(data){
+          console.log(data)
+       }
+     })
+   }
+
+
+
+
+
+   
+  </script>
+
+</html>
